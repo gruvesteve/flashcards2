@@ -1,0 +1,116 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (min-width: 600px) {     /*CSS for mobile enheter*/
+    .kort{
+        background-color: black;
+    }
+}
+
+body{
+    /*background: url("./filer/bilder/kinesisk-norsk4.png") fixed center center;*/
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d0d0d0;
+}
+.kort{      /*.Kort er den overordnede classen til hele flashcard 'delen' av nettsiden*/
+    background-color: #ffffff;
+    width: 40rem;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.subkort{
+    border: #AB2203 5px solid;
+    border-radius: 20px;
+    margin: 10px;
+}
+.overskrift1, .overskrift2{
+    text-align:center;
+    font-size: small;
+}
+
+/*CSS til Navigation bar*/
+#navbar{
+    display: flex;
+    background-color: #04AA6D;
+    padding: 10px;
+    top: 5px;
+    margin-bottom: 10px;   
+    font-size: x-large; 
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+
+#navbar a {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+#tittel{
+    padding: 2px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #04AA6D;
+}
+#tittel h1{
+    color: white;
+}
+
+#norsk{
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+}    
+#kinesisk{
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+    font-size: xx-large;
+}
+.buttons{
+   margin: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+button{
+    font-size: large;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    padding: 6px 25px;
+    margin-top: 4px;
+    border-radius: 7px;
+}
+.restartKnapp{
+    visibility: hidden;
+    margin: auto;
+    margin-top: 5px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FF4A51;
+}
+.buttons button:hover{
+    transition: all .05s ease-in;
+    transform: scale(1.07);
+}
+.restartKnapp button:hover{
+    transition: all .03s ease-in;
+    transform: scale(1.08);
+}
